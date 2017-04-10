@@ -1,0 +1,32 @@
+{
+  "name": "sparrow-react",
+  "version": "1.0.0",
+  "description": "## 使用说明: npm run start: 运行本地开发环境",
+  "main": "src/index.js",
+  "scripts": {
+    "api": "node app-server",
+    "start": "rstool-build --server --devtool source-map",
+    "dev": "rstool-build --env dev --cdn --hash --devtool source-map",
+    "uat1": "rstool-build --env uat1 --cdn --hash --devtool source-map",
+    "stg": "rstool-build --env stg --cdn --hash",
+    "prd": "rstool-build --env prd --cdn --hash"
+  },
+  "author": "Land",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.0.0"
+  },
+  "devDependencies": {
+    "antd": "^2.8.3",
+    "backbone": "^1.3.3",
+    "body-parser": "^1.17.1",
+    "express-http-proxy": "^0.11.0",
+    "morgan": "^1.8.1",
+    "multer": "^1.3.0",
+    "react-proxy-loader": "^0.3.5",
+    "rstool-build": "0.1.27"
+  }
+}
